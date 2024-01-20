@@ -5,7 +5,7 @@ RUN apt-get -y install apt-utils gcc \
 	nano unzip nodejs x11vnc \
 	fakeroot dbus base whiptail hexedit \
 	patch wamerican ucf manpages \
-	file make dialog curl lxde-core \
+	file make dialog curl \
 	less cowsay netcat-openbsd xvfb fluxbox
 RUN useradd -m user && echo "user:password" | chpasswd
 RUN systemctl set-default graphical.target
