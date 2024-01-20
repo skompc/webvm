@@ -6,7 +6,7 @@ RUN apt-get -y install apt-utils gcc \
 	fakeroot dbus base whiptail hexedit \
 	patch wamerican ucf manpages \
 	file make dialog curl lxde-core \
-	less cowsay netcat-openbsd 
+	less cowsay netcat-openbsd xvfb
 RUN useradd -m user && echo "user:password" | chpasswd
 RUN systemctl set-default graphical.target
 COPY --chown=user:user ./examples /home/user/examples
