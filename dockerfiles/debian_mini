@@ -7,7 +7,7 @@ RUN apt-get -y install apt-utils gcc \
 	patch wamerican ucf manpages \
 	file luajit make lua50 dialog curl \
 	less cowsay netcat-openbsd sudo \
-	kde-plasma-desktop tigervnc-standalone-server
+	lxde-core tigervnc-standalone-server \
 RUN useradd -m user && echo "user:password" | chpasswd
 RUN usermod -aG sudo user
 RUN echo "%sudo   ALL=(ALL:ALL) ALL"  >>  /etc/sudoers
